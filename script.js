@@ -1,3 +1,4 @@
+window.onload=()=>{
 let title = document.getElementById("title");
 let price = document.getElementById("price");
 let taxes = document.getElementById("taxes");
@@ -150,4 +151,6 @@ function update(i) {
     getTotal();}catch(err){    console.log(err);
   }
   
+}
+
 }
