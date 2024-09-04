@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>storage programing</title>
+    <link rel="stylesheet" href="test2.css">
+</head>
+<body>
+    <div class="continer" id="continer">
+        <div class="head" id="head">
+            <h1 class="stor" id="stor">stor</h1>
+            <p class="p" id="p">i love this stor</p>
+        </div>
+        <div class="inputs" id="inputs">
+            <input type="text" class="title" id="title" placeholder="title">
+            <div class="PriceCon" id="PriceCon">
+                <input onkeyup="getTotal()" type="number" class="price" id="price" placeholder="price">
+                <input onkeyup="getTotal()" type="number" class="taxes" id="taxes" placeholder="taxes">
+                <input onkeyup="getTotal()" type="number" class="ads" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" class="discount" id="discount" placeholder="discount">
+                <span class="total" id="total"></span>
+            </div>
+            <input type="number" class="count" id="count" placeholder="count">
+            <input type="text" class="categroy" id="categroy" placeholder="categroy">
+            <button class="create" id="create">create</button>
+        </div>
+        <div class="outputs" id=" outputs">
+            <input type="text" class="search" id="search" placeholder="search">
+            <div id="btnsearch">
+                <button class="Stitle" id="Stitle">search by title</button>
+            <button class="Scategroy" id="Scategroy">search by categroy</button>
+            </div>
+            <div id = "deleteAll"></div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>categroy</th>
+                    <th>total</th>
+                    <th>count</th>
+                    <th>update</th>
+                    <th>delete</th>
+                    <tbody id= 'tbody'></tbody>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <script src="test2.js"></script>
+</body>
+</html>
